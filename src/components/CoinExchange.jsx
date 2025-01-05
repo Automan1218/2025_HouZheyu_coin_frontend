@@ -17,11 +17,12 @@ const CoinExchange = () => {
             setError(null);
             setResult(null);
 
-            // Parse coin values
-            const coins = coinValues
-                .split(",")
-                .map((value) => parseFloat(value.trim()))
-                .filter((value) => !isNaN(value)); // Filter invalid input
+            // // Parse coin values
+            // const coins = coinValues
+            //     .split(",")
+            //     .map((value) => parseFloat(value.trim()))
+            //     .filter((value) => !isNaN(value)); // Filter invalid input
+            const coins = coinValues.split(",").map(value => value.trim());
 
             if (coins.length === 0) {
                 setError("Invalid coin values. Please enter valid numbers separated by commas!");
