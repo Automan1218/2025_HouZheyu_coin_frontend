@@ -101,25 +101,5 @@ The Coin Calculator Frontend is a React-based user interface for the Coin Calcul
    http://localhost:5173
    ```
 
----
 
-
-## **Frontend API Integration**
-
-1. **API Endpoint**:
-   - The frontend sends POST requests to the backend REST API:
-     ```
-     POST http://<your-backend-ip>:8080/api/min-coins
-     ```
-
-2. **Example Request**:
-   ```json
-   {
-       "targetAmount": 123.45,
-       "value": [0.1, 0.5, 1.0]
-   }
-   ```
-
-3. **Error Handling**:
-   - If the backend detects invalid values (e.g., letters, symbols), the error message from the backend will be displayed on the frontend.
 
